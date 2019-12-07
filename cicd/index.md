@@ -1,6 +1,7 @@
-
-
-# Just push it
+---
+layout: blog
+title: Just push it
+---
 
 Often times, developers get blocked by long builds, test, etc. In an ideal world, you'd figure out why this is taking so long and work out better caching. In reality, that's not so easy.
 

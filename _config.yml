@@ -18,7 +18,7 @@ title:       "Open Source Mentoring"
 keywords:    "open source, consult, programming, python, docker, kubernetes, career, progress, resume"
 description: "We help you get cool tech jobs"
 source_link: "https://github.com/ossmentoring"
-favicon:     "img/logo-128x149.png"
+favicon:     "/img/logo-128x149.png"
 touch_icon:  "img/apple-touch-icon.png"
 google_analytics_key: UA-153169451-1
 
