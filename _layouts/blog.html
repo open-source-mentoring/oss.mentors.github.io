@@ -23,10 +23,20 @@
 
   </head>
   <body>
+    <nav><ul>
+      {% for node in site.posts reversed %}
+        {% capture id %}{{ node.id | remove:'/' | downcase }}{% endcapture %}
+        <li class="p-{{id}}"><a href="/#{{id}}">{{node.title}}</a></li>
+      {% endfor %}
+    </ul></nav>
+
     <main id="content" class="main-content" role="main">
       <div class="section">
 	<div class="container white">
-	  <h1>{{ page.title }}</h1>
+	  <h1>
+	    <i class="fa fa-{{page.icon}} fa-2x" aria-hidden="true"></i>
+	    {{ page.title }}
+	  </h1>
 	  <h2>{{ page.description }}</h2>
 	</div>
       </div>

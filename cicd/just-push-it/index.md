@@ -1,6 +1,7 @@
 ---
 layout: blog
 title: Just push it
+icon: github
 ---
 
 <div class="blogsection bg-blue text-white container" markdown="1">
