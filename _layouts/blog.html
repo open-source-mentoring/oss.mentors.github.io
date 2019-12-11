@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+
+    {% if site.google_analytics_key %}
+      <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics_key }}"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', '{{ site.google_analytics }}');
+      </script>
+    {% endif %}
+
+      <title>{{ page.title }}</title>
+	<meta name="keywords" content="{{ site.keywords }}">
+	<meta name="description" content="{{ site.description }}">
+  <link rel="stylesheet" href="/combo.css">
+  <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+  {% if site.favicon %}<link rel="shortcut icon" href="{{ site.favicon }}" type="image/x-icon">{% endif %}
+	{% if site.touch_icon %}<link rel="apple-touch-icon" href="{{ site.touch_icon }}">{% endif %}
+
+  </head>
+  <body>
+    <nav><ul>
+      {% for node in site.posts reversed %}
+        {% capture id %}{{ node.id | remove:'/' | downcase }}{% endcapture %}
+        <li class="p-{{id}}"><a href="/#{{id}}">{{node.title}}</a></li>
+      {% endfor %}
+    </ul></nav>
+
+    <main id="content" class="main-content" role="main">
+      <div class="section">
+	<div class="container white">
+	  <h1>
+	    <i class="fa fa-{{page.icon}} fa-2x" aria-hidden="true"></i>
+	    {{ page.title }}
+	  </h1>
+	  <h2>{{ page.description }}</h2>
+	</div>
+      </div>
+      {{ content }}
+    </main>
+  </body>
+</html>

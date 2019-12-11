@@ -38,7 +38,7 @@ code, pre {
 }
 
 /* block code */
-pre code { background: none; display: block; }
+pre code { background: none; display: block; white-space: pre-wrap }
 pre {
   display: block;
   margin: 20px 5%;
@@ -47,7 +47,7 @@ pre {
   word-wrap: break-word;
 }
 
-.highlight { margin:20px 5%; }
+.highlight { margin:20px 5%; color: inherit; }
 
 
 /* ----- base elements ----- */
@@ -197,6 +197,16 @@ nav ul li:hover, nav ul li.active {
   width:100%;
   min-height:200px;
   padding:110px 0;
+  background:url(img/bgnoise.png);
+  /* generated noise from noisetexturegenerator.com */
+}
+
+.blogsection {
+  position:relative;
+  display:block;
+  width:100%;
+  min-height:200px;
+  padding:50px 0;
   background:url(img/bgnoise.png);
   /* generated noise from noisetexturegenerator.com */
 }
