@@ -47,17 +47,23 @@ which will continuously run your tests, even as you switch branches or make chan
 
 Once you have tests, you need a CICD server. For any serious work, pricing is nothing. For example, [AWS CodeBuild Pricing](https://aws.amazon.com/codebuild/pricing/) is,
 
-> Build minutes = 100 builds * 5 minutes = 500 build minutes
-> Build minutes – Free tier build minutes = Monthly billable build minutes = 500 – 100 = 400 build minutes
-> Monthly build charges = 400 build minutes * $0.005 = $2
+```
+Build minutes = 100 builds * 5 minutes = 500 build minutes
+Build minutes – Free tier build minutes = Monthly billable build minutes = 500 – 100 = 400 build minutes
+Monthly build charges = 400 build minutes * $0.005 = $2
+```
 
 Plus the setup time. Let's say 2hrs (which is exagerrated)
-> $2 + $30/hrs * 2 = $62
+```
+$2 + $30/hrs * 2 = $62
+```
 
 Or, you pay your developer to sit there at stare at the build and tests,
 
-> Build minutes = 100 builds * 5 minutes = 500 build minutes
-> Monthly build charges = 500 build minutes * $30/hrs = $250
+```
+Build minutes = 100 builds * 5 minutes = 500 build minutes
+Monthly build charges = 500 build minutes * $30/hrs = $250
+```
 
 And I hope your dev is paid more than $30/hrs.
 

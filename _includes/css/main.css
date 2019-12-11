@@ -38,7 +38,7 @@ code, pre {
 }
 
 /* block code */
-pre code { background: none; display: block; }
+pre code { background: none; display: block; white-space: pre-wrap }
 pre {
   display: block;
   margin: 20px 5%;
@@ -47,7 +47,7 @@ pre {
   word-wrap: break-word;
 }
 
-.highlight { margin:20px 5%; }
+.highlight { margin:20px 5%; color: inherit; }
 
 
 /* ----- base elements ----- */
