@@ -201,6 +201,16 @@ nav ul li:hover, nav ul li.active {
   /* generated noise from noisetexturegenerator.com */
 }
 
+.blogsection {
+  position:relative;
+  display:block;
+  width:100%;
+  min-height:200px;
+  padding:50px 0;
+  background:url(img/bgnoise.png);
+  /* generated noise from noisetexturegenerator.com */
+}
+
 .section:first-of-type {
     padding-top: 140px;
 }

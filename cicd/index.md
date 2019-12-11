@@ -3,9 +3,15 @@ layout: blog
 title: Just push it
 ---
 
+<div class="blogsection bg-blue text-white container" markdown="1">
+
 Often times, developers get blocked by long builds, test, etc. In an ideal world, you'd figure out why this is taking so long and work out better caching. In reality, that's not so easy.
 
 The pain here goes away with good CICD infrastructure and TDD practices. In this world, you can easily parallelize builds and tests such that you don't need to sit around waiting for things to finish.
+
+</div>
+
+<div class="blogsection bg-white text-black container" markdown="1">
 
 ## Test Driven Development
 
@@ -20,6 +26,10 @@ I catch myself testing code by,
 
 Each of these should just become a test. Honestly the only thing that blocks me, and others I work with, is just setting up the test infrastructure. But just do it, and be done.
 
+</div>
+
+<div class="blogsection bg-blue text-white container" markdown="1">
+
 ## Unit test watcher
 
 If your tests run really quickly, or you separate integ and unit tests (<-- good idea too), then you can have something continuously execute your tests. I often run commands like this,
@@ -29,6 +39,9 @@ watch -n1 pytest tests
 ```
 
 which will continuously run your tests, even as you switch branches or make changes. This way you can interactively develop. The CICD pipeline become powerful for longer running builds and/or tests.
+
+</div>
+<div class="blogsection bg-white text-black container" markdown="1">
 
 ## Cost of CICD
 
@@ -47,6 +60,9 @@ Or, you pay your developer to sit there at stare at the build and tests,
 > Monthly build charges = 500 build minutes * $30/hrs = $250
 
 And I hope your dev is paid more than $30/hrs.
+
+</div>
+<div class="blogsection bg-blue text-white container" markdown="1">
 
 ## Push, switch branch, push
 
@@ -68,6 +84,11 @@ git push origin feature-A-c
 
 At this time, some of your branches will be done building in CI/CD, so you check the results and rotate branches again.
 
+</div>
+<div class="blogsection bg-white text-black container" markdown="1">
+
 ## Summary
 
 I use CICD pipelines regularly for development. I find them a powerful way to offload work and time on my part.
+
+</div>
