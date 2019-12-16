@@ -27,7 +27,8 @@
       {% for node in site.posts reversed %}
         {% capture id %}{{ node.id | remove:'/' | downcase }}{% endcapture %}
         <li class="p-{{id}}"><a href="/#{{id}}">{{node.title}}</a></li>
-      {% endfor %}
+	{% endfor %}
+      <li class="p-blue"><a href="/blog">Blog</a></li>
     </ul></nav>
 
     <main id="content" class="main-content" role="main">
@@ -42,5 +43,12 @@
       </div>
       {{ content }}
     </main>
+
+    <div id="footer" class="section text-white">
+      <div class="container">
+        {% capture foottext %} {% include footer.md %} {% endcapture %}
+        {{ foottext | markdownify }}
+      </div>
+    </div>
   </body>
 </html>

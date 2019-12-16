@@ -2,9 +2,16 @@
 layout: blog
 title: Just push it
 icon: github
+categories: ops
+blogpost: true
+description: Long builds suck. With CI/CD pipelines, you can skip the build
 ---
 
 <div class="blogsection bg-blue text-white container" markdown="1">
+
+<div style="text-align:center" markdown="1">
+  ![Compiling](//imgs.xkcd.com/comics/compiling.png)
+</div>
 
 Often times, developers get blocked by long builds, test, etc. In an ideal world, you'd figure out why this is taking so long and work out better caching. In reality, that's not so easy.
 
