@@ -12,6 +12,10 @@ timezone: null
 lsi: false
 markdown: kramdown
 
+collections:
+  blog:
+    output: true
+    permalink: /blog/:categories/:title
 
 ### content configuration ###
 title:       "Open Source Mentoring"
